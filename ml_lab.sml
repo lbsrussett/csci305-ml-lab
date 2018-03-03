@@ -2,12 +2,19 @@
 *
 * CSCI 305 - ML Programming Lab
 *
-* <firstname> <lastname>
-* <email-address>
+* Laura Sullivan-Russett
+* lbsrussett@gmail.com
 *
 ***************************************************************)
 
 (* Define your data type and functions here *)
+datatype set = Empty | Set and
+	'a Set = NIL | CONS of 'a * 'a Set;
+
+fun isMember e NIL = false |
+= isMember e (CONS(head, tail)) = e = head 
+= orelse isMember e tail;
+
 
 (* Simple function to stringify the contents of a Set of characters *)
 fun stringifyCharSet Empty = ""

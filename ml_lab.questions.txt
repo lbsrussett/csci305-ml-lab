@@ -3,13 +3,16 @@ CSCI 305
 Spring 2018
 Lab Questions
 =======================
-1.
+1. fun f [] = [] (* a *)
+   | f (x::xs) = (x + 1) :: (f xs) (* b *);  
 
-2.
+	val it = [4,2,5,2,6,10] : int list
 
-3.
+2. The function f base case returns an empty list if given an empty list.  In the alternative portion, the head of the list is incremented by one on each recursive call.  This returns a list where each value is the original list's value + 1.
 
-4.
+3. (* if an empty list is passed in, return an empty list *)
+
+4. (* if a non-empty list is passed in, for each value in the list, add one.  Return the resulting list *)
 
 5.
 
